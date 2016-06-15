@@ -37,6 +37,7 @@
 		66631D281D0719C5007DDEB3 /* SF-UI-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66631D131D0719C5007DDEB3 /* SF-UI-Text-RegularItalic.otf */; };
 		66631D291D0719C5007DDEB3 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66631D141D0719C5007DDEB3 /* SF-UI-Text-Semibold.otf */; };
 		66631D2A1D0719C5007DDEB3 /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66631D151D0719C5007DDEB3 /* SF-UI-Text-SemiboldItalic.otf */; };
+		6669611F1D118D4100E278ED /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669611E1D118D4100E278ED /* AddContactViewController.swift */; };
 		667108921D0F095800E7F721 /* tabBarDidSelectItem.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 667108911D0F095800E7F721 /* tabBarDidSelectItem.m4a */; };
 		667DD6711D086262001E2FE0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DD66D1D086262001E2FE0 /* Fabric.framework */; };
 		667DD6721D086262001E2FE0 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DD66E1D086262001E2FE0 /* DigitsKit.framework */; };
@@ -101,6 +102,7 @@
 		66631D131D0719C5007DDEB3 /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		66631D141D0719C5007DDEB3 /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
 		66631D151D0719C5007DDEB3 /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		6669611E1D118D4100E278ED /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		667108911D0F095800E7F721 /* tabBarDidSelectItem.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tabBarDidSelectItem.m4a; sourceTree = "<group>"; };
 		667DD66D1D086262001E2FE0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		667DD66E1D086262001E2FE0 /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = SOURCE_ROOT; };
@@ -237,6 +239,7 @@
 				66FB579B1D0B33990080CF59 /* ContactsTableViewController.swift */,
 				66098E991D0C8320008D262F /* DetailViewController.swift */,
 				66FAB15E1D0DD2E400B83675 /* vraveeoTabBarController.swift */,
+				6669611E1D118D4100E278ED /* AddContactViewController.swift */,
 			);
 			name = ViewControllers;
 			path = Models/ViewControllers;
@@ -432,6 +435,7 @@
 				66FAB15F1D0DD2E400B83675 /* vraveeoTabBarController.swift in Sources */,
 				66FB579C1D0B33990080CF59 /* ContactsTableViewController.swift in Sources */,
 				66098E9A1D0C8320008D262F /* DetailViewController.swift in Sources */,
+				6669611F1D118D4100E278ED /* AddContactViewController.swift in Sources */,
 				66631CD81D0714D1007DDEB3 /* vraveeo.xcdatamodeld in Sources */,
 				66631CD01D0714D1007DDEB3 /* AppDelegate.swift in Sources */,
 			);
