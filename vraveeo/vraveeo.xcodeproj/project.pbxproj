@@ -44,8 +44,10 @@
 		667DD6731D086262001E2FE0 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 667DD66F1D086262001E2FE0 /* DigitsKitResources.bundle */; };
 		667DD6741D086262001E2FE0 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DD6701D086262001E2FE0 /* TwitterCore.framework */; };
 		66A7B0621D083D85000C8A87 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7B0611D083D85000C8A87 /* ContentViewController.swift */; };
+		66BE01931D11FEF600F4009F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66BE01921D11FEF600F4009F /* GoogleService-Info.plist */; };
 		66FAB15F1D0DD2E400B83675 /* vraveeoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAB15E1D0DD2E400B83675 /* vraveeoTabBarController.swift */; };
 		66FB579C1D0B33990080CF59 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB579B1D0B33990080CF59 /* ContactsTableViewController.swift */; };
+		6727FA3C47E89081C770A19B /* libPods-vraveeo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A521B3E7478F7C6DB84EE3CE /* libPods-vraveeo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D5E3500C93455EAFD0052C7 /* Pods-vraveeo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vraveeo.release.xcconfig"; path = "Pods/Target Support Files/Pods-vraveeo/Pods-vraveeo.release.xcconfig"; sourceTree = "<group>"; };
 		66098E991D0C8320008D262F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		66631CCC1D0714D0007DDEB3 /* vraveeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vraveeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66631CCF1D0714D0007DDEB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,8 +112,11 @@
 		667DD66F1D086262001E2FE0 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = SOURCE_ROOT; };
 		667DD6701D086262001E2FE0 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
 		66A7B0611D083D85000C8A87 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		66BE01921D11FEF600F4009F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		66FAB15E1D0DD2E400B83675 /* vraveeoTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vraveeoTabBarController.swift; sourceTree = "<group>"; };
 		66FB579B1D0B33990080CF59 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		A521B3E7478F7C6DB84EE3CE /* libPods-vraveeo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vraveeo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DC095E7CD67464CC1C5D45 /* Pods-vraveeo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vraveeo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vraveeo/Pods-vraveeo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 				667DD6711D086262001E2FE0 /* Fabric.framework in Frameworks */,
 				667DD6741D086262001E2FE0 /* TwitterCore.framework in Frameworks */,
 				667DD6721D086262001E2FE0 /* DigitsKit.framework in Frameworks */,
+				6727FA3C47E89081C770A19B /* libPods-vraveeo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F1B09DD0464C340B5EC2C39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A521B3E7478F7C6DB84EE3CE /* libPods-vraveeo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		66631CC31D0714D0007DDEB3 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +164,8 @@
 				66631CF11D0714D1007DDEB3 /* vraveeoUITests */,
 				66631CCD1D0714D0007DDEB3 /* Products */,
 				66631D001D0719C5007DDEB3 /* SF-UI */,
+				CDCFFCCC01B06BDB92B111E4 /* Pods */,
+				3F1B09DD0464C340B5EC2C39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,10 +182,7 @@
 		66631CCE1D0714D0007DDEB3 /* vraveeo */ = {
 			isa = PBXGroup;
 			children = (
-				667DD66D1D086262001E2FE0 /* Fabric.framework */,
-				667DD66E1D086262001E2FE0 /* DigitsKit.framework */,
-				667DD66F1D086262001E2FE0 /* DigitsKitResources.bundle */,
-				667DD6701D086262001E2FE0 /* TwitterCore.framework */,
+				66A4EA591D11E5E900E91BF0 /* Frameworks */,
 				66A7B0601D083D1E000C8A87 /* Assets */,
 				66A7B05F1D083CB7000C8A87 /* ViewControllers */,
 				66A7B05E1D083C9C000C8A87 /* Models */,
@@ -224,6 +238,17 @@
 			path = "vraveeo/SF-UI";
 			sourceTree = "<group>";
 		};
+		66A4EA591D11E5E900E91BF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				667DD66D1D086262001E2FE0 /* Fabric.framework */,
+				667DD66E1D086262001E2FE0 /* DigitsKit.framework */,
+				667DD66F1D086262001E2FE0 /* DigitsKitResources.bundle */,
+				667DD6701D086262001E2FE0 /* TwitterCore.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		66A7B05E1D083C9C000C8A87 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,9 +278,19 @@
 				66631CD31D0714D1007DDEB3 /* Main.storyboard */,
 				66631CD91D0714D1007DDEB3 /* Assets.xcassets */,
 				66631CDB1D0714D1007DDEB3 /* LaunchScreen.storyboard */,
+				66BE01921D11FEF600F4009F /* GoogleService-Info.plist */,
 				66631CDE1D0714D1007DDEB3 /* Info.plist */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		CDCFFCCC01B06BDB92B111E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC095E7CD67464CC1C5D45 /* Pods-vraveeo.debug.xcconfig */,
+				0D5E3500C93455EAFD0052C7 /* Pods-vraveeo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +300,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66631CF71D0714D1007DDEB3 /* Build configuration list for PBXNativeTarget "vraveeo" */;
 			buildPhases = (
+				6C1757DCD85FF41018296600 /* Check Pods Manifest.lock */,
 				66631CC81D0714D0007DDEB3 /* Sources */,
 				66631CC91D0714D0007DDEB3 /* Frameworks */,
 				66631CCA1D0714D0007DDEB3 /* Resources */,
 				667DD66C1D086244001E2FE0 /* ShellScript */,
+				29120D8C211018D514D508DC /* Embed Pods Frameworks */,
+				D17C4E96EA84E02F02FFF7AA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -375,6 +413,7 @@
 				66631D191D0719C5007DDEB3 /* SF-UI-Display-Light.otf in Resources */,
 				66631D221D0719C5007DDEB3 /* SF-UI-Text-HeavyItalic.otf in Resources */,
 				66631D261D0719C5007DDEB3 /* SF-UI-Text-MediumItalic.otf in Resources */,
+				66BE01931D11FEF600F4009F /* GoogleService-Info.plist in Resources */,
 				66631D171D0719C5007DDEB3 /* SF-UI-Display-Bold.otf in Resources */,
 				66631D1A1D0719C5007DDEB3 /* SF-UI-Display-Medium.otf in Resources */,
 				66631D2A1D0719C5007DDEB3 /* SF-UI-Text-SemiboldItalic.otf in Resources */,
@@ -410,6 +449,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		29120D8C211018D514D508DC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vraveeo/Pods-vraveeo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		667DD66C1D086244001E2FE0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -422,6 +476,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 734a53be9ed3ab0d49d14254d1172b11299f78dd 05c3f51996d30f081f56d013da134084b7e6f4ec9020588e80393c0b397fa527 ";
+		};
+		6C1757DCD85FF41018296600 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D17C4E96EA84E02F02FFF7AA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vraveeo/Pods-vraveeo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -581,9 +665,11 @@
 		};
 		66631CF81D0714D1007DDEB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6DC095E7CD67464CC1C5D45 /* Pods-vraveeo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/vraveeo",
@@ -599,6 +685,7 @@
 		};
 		66631CF91D0714D1007DDEB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5E3500C93455EAFD0052C7 /* Pods-vraveeo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

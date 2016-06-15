@@ -10,25 +10,28 @@ import UIKit
 import CoreData
 import Fabric
 import DigitsKit
+import Firebase
 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
-  
-
   var window: UIWindow?
-
+  
+  override init () {
+    FIRApp.configure()
+  }
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+
     Digits.sharedInstance().startWithConsumerKey("QsffrzFWUc2pHJjaqWAidHuk1", consumerSecret: "1W4HWquaKj70SYl5clUR05sm3wfjdLjeurMZ6ULviRNX5a6TGf")
     Fabric.with([Digits.self])
 
     let pageController = UIPageControl.appearance()
     pageController.pageIndicatorTintColor = UIColor.lightGrayColor()
     pageController.currentPageIndicatorTintColor = UIColor.redColor()
-    
+    UITabBar.appearance().tintColor = UIColor(red: 228/255, green: 64/255, blue: 71/255, alpha: 1.0) /* #e44047 */    
     return true
   }
 

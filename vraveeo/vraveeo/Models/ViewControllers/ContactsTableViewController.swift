@@ -116,7 +116,7 @@ class ContactsTableViewController: UITableViewController {
     let formatter = CNContactFormatter()
     
     cell.textLabel?.text = formatter.stringFromContact(contact)
-    cell.detailTextLabel?.text = contact.emailAddresses.first?.value as? String
+    //cell.detailTextLabel?.text = contact.emailAddresses.first?.value as? String
     
     return cell
   }
