@@ -63,8 +63,13 @@ class DetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
    navigationController!.navigationBar.tintColor = UIColor.whiteColor()
-    // Do any additional setup after loading the view, typically from a nib.
     UIApplication.sharedApplication().statusBarStyle = .LightContent
+    contactImage.layer.borderWidth = 1
+    contactImage.layer.masksToBounds = true
+    contactImage.layer.borderColor = UIColor.blackColor().CGColor
+    contactImage.layer.cornerRadius = contactImage.frame.height/2
+    contactImage.clipsToBounds = true
+
 
     self.configureView()
   }

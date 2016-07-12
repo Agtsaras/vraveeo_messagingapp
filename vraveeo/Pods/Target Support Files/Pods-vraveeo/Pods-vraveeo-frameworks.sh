@@ -82,3 +82,12 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-vraveeo/JSQMessagesViewController.framework"
+  install_framework "Pods-vraveeo/JSQSystemSoundPlayer.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-vraveeo/JSQMessagesViewController.framework"
+  install_framework "Pods-vraveeo/JSQSystemSoundPlayer.framework"
+fi

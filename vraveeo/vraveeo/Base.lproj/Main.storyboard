@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fbu-J4-zPx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -71,14 +71,14 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h2g-Sj-uAW" id="VFh-R5-d00">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5tc-Vq-DGg">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -94,7 +94,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Contacts" id="a2D-z1-CmN">
-                        <barButtonItem key="rightBarButtonItem" image="AddButton" id="wFv-TH-PNz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wFv-TH-PNz">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="vx6-8y-mUd" kind="show" identifier="addContact" id="ek4-ae-UwB"/>
@@ -406,29 +406,6 @@
             </objects>
             <point key="canvasLocation" x="3732" y="833"/>
         </scene>
-        <!--Chats-->
-        <scene sceneID="N5E-Pe-8a1">
-            <objects>
-                <viewController id="q6x-QE-uxB" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2h4-T8-3PE"/>
-                        <viewControllerLayoutGuide type="bottom" id="FNQ-oW-LzO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DTf-lX-Gsl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Chats" id="Z4p-pL-mpS">
-                        <barButtonItem key="rightBarButtonItem" image="NewMessageButton" id="WI7-1W-bqH">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1SY-uk-DVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2866" y="1503"/>
-        </scene>
         <!--Vraveeo Tab Bar Controller-->
         <scene sceneID="aSM-ID-QjN">
             <objects>
@@ -566,12 +543,45 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="q6x-QE-uxB" kind="relationship" relationship="rootViewController" id="Bo8-Ah-xiw"/>
+                        <segue destination="XAd-VL-aBa" kind="relationship" relationship="rootViewController" id="wZQ-Cm-V63"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RqD-9B-TXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2183" y="1503"/>
+        </scene>
+        <!--Chats-->
+        <scene sceneID="7HE-Vx-RS1">
+            <objects>
+                <tableViewController id="XAd-VL-aBa" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="y3J-dN-v9K">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="zlD-9a-gZJ">
+                                <rect key="frame" x="0.0" y="92" width="600" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zlD-9a-gZJ" id="6pG-g2-TLS">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XAd-VL-aBa" id="eQm-C6-VJf"/>
+                            <outlet property="delegate" destination="XAd-VL-aBa" id="Ljy-X9-6nK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Chats" id="u5Z-x7-Nb7">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="wK9-gJ-3Zn">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00x-1l-pXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2866" y="1508"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="0nT-0f-pMw">
@@ -598,8 +608,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AddButton" width="23" height="23"/>
-        <image name="NewMessageButton" width="23" height="23"/>
         <image name="chats" width="28" height="23"/>
         <image name="contacts" width="27" height="24"/>
     </resources>

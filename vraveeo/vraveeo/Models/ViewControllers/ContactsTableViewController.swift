@@ -10,17 +10,24 @@
 import UIKit
 import Contacts
 import AddressBook
+import DigitsKit
+
+
 
 class ContactsTableViewController: UITableViewController {
   
   var detailViewController: DetailViewController? = nil
   var objects = [CNContact]()
   
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     UIApplication.sharedApplication().statusBarStyle = .LightContent
-
     
+    
+        
+    
+ 
     
     NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ContactsTableViewController.insertNewObject(_:)), name: "addNewContact", object: nil)
     self.getContacts()
@@ -97,6 +104,8 @@ class ContactsTableViewController: UITableViewController {
       }
     }
   }
+  
+  
 
   
   // MARK: - Table View

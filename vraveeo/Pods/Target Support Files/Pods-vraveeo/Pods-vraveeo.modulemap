@@ -1,0 +1,6 @@
+framework module Pods_vraveeo {
+  umbrella header "Pods-vraveeo-umbrella.h"
+
+  export *
+  module * { export * }
+}
